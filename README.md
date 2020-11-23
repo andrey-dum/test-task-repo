@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+# DemoLink
+https://andrey-dum.github.io/test-task/
+redux, react-redux, redux-thunk, react-router, react-bootstrap
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

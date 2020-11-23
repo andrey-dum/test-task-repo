@@ -1,0 +1,91 @@
+.users {
+    background: #f9f9f3;
+    padding-top: 152px;
+    @media screen and (max-width: 768px ) {
+        padding-top: 90px;
+        
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 30px;
+        
+    }
+    .section__title  {
+        margin-bottom: 13px;
+
+    }
+    .btn {
+        margin-top: 20px;
+    }
+   
+}
+
+.user__card {
+    text-align: center;
+    width: 216px;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    position: relative;
+    margin-right: 57px;
+    margin-left: 58px;
+    padding: 0 8px;
+    @media screen and (max-width: 990px ) {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    h2 {
+        margin: 24px 0;
+        margin-bottom: 11px;
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+    }
+    .user__position {
+        margin-bottom: 15px;
+    }
+    .user__email {
+        margin-bottom: 12px;
+        position: relative;
+        .email {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    
+}
+
+.user__email:hover {
+    cursor: pointer;
+    .utooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.tooltip__wrap {
+    display: flex;
+    justify-content: center;
+}
+.utooltip {
+    transition: var(--transition);
+    position: relative;
+    display: block;
+    background: rgba(0,0,0,.65);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 3px 10px;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    top: 56px;
+    z-index: 1;
+    opacity: 0;
+    cursor: default;
+}

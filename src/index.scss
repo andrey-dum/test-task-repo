@@ -1,0 +1,137 @@
+:root {
+  --primaryColor: #ef5b4c;
+  --secondaryColor: #007bff;
+  --background1: #fff;
+  --background2: #f9f9f3;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.content {
+  flex: 1 0 auto;
+ 
+}
+.footer {
+  flex-shrink: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 54px;
+  @media screen and (max-width: 768px ) {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  @media screen and (max-width: 360px ) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: #000000;
+  &:hover {
+    color: var(--primaryColor);
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1170px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.toast {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  &.danger {
+    background: rgb(204, 88, 88);
+  }
+}
+
+.btn {
+  border: none;
+  padding: 6px 60px;
+  transition: var(--transition);
+ 
+  &-primary {
+    background-color: var(--primaryColor);
+    
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+      background-color: #d24335;
+    }
+  }
+  &-flat {
+    background-color: transparent;
+    color: var(--primaryColor);
+    padding: 6px 0;
+    font-weight: 600;
+    &:hover, &:focus, &:active {
+      box-shadow: none;
+      color: #d24335;
+    }
+  }
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #d24335;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #8d8c8c;
+  background-color: #d7d7d7;
+  border-color: #d7d7d7;
+  opacity: 1;
+}
+
+.footer {
+  &__info {
+      border-top: 1px solid #ececec;
+      padding: 15px 0;
+      margin-top: 30px;
+
+  }
+  
+}

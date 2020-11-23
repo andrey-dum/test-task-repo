@@ -1,0 +1,53 @@
+.signUp {
+    padding-top: 145px;
+    @media screen and (max-width: 768px ) {
+        padding-top: 75px;
+    }
+    .signup__wrapper {
+        max-width: 530px;
+        margin: 0 auto;
+        .section__title {
+            margin-bottom: 17px;
+            margin-top: 26px;
+        }
+        p {
+            padding: 0 30px;
+            margin-bottom: 27px;
+        }
+    }
+}
+.signup__form {
+    padding: 0 30px;
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .select__position {
+        margin-bottom: 15px;
+    }
+    .upload__file {
+        margin-top: 50px;
+        
+    }
+    .upload__title {
+        z-index: 10;
+        top: -30px;
+        position: absolute;
+    }
+    .btn {
+        margin-top: 35px;
+    }
+}
+
+input:placeholder {
+    color: #b2b9c0;
+}
+
+.modal-dialog {
+    margin-top: 200px;
+    @media (min-width: 576px) {
+         max-width: 400px;
+        
+    }
+    
+}

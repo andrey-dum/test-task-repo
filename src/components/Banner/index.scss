@@ -1,0 +1,31 @@
+.banner__wrapper {
+    position: relative;
+    width: 100%;
+    background: url('/assets/img/banner-photo-1170.jpg');
+    background-repeat: repeat;
+    padding: 108px 30px 115px 30px;
+    background-size: cover;
+    @media screen and (max-width: 768px ) {
+        padding: 61px 30px 69px 30px;
+    }
+    
+}
+
+.banner__content {
+    // position: absolute;
+    color: #ffffff;
+    // top: 107px;
+    // left: 30px;
+    max-width: 534px;
+    @media screen and (max-width: 768px ) {
+        max-width: 430px;
+      }
+    .banner__title {
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    .banner__text {
+        margin-bottom: 34px;
+        
+    }
+}
